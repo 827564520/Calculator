@@ -7,9 +7,13 @@
 //
 
 #include <stdio.h>
+#include "Logic.h"
 
 int main(int argc, const char * argv[])
 {
-    printf("Hello, World!\n");
+    
+    printf("a xrl b = %d\n",xrl(1, 1));
+    printf("a xnor b = %d\n",xnor(1, 1));
+    
     return 0;
 }

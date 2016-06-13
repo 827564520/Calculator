@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		22009ACA1D0F0B660050332A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 22009AC91D0F0B660050332A /* main.c */; };
+		22009AD21D0F0FD80050332A /* Config.c in Sources */ = {isa = PBXBuildFile; fileRef = 22009AD01D0F0FD80050332A /* Config.c */; };
+		22872DC71D0F14A600A29B8F /* Logic.c in Sources */ = {isa = PBXBuildFile; fileRef = 22872DC51D0F14A600A29B8F /* Logic.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		22009AC61D0F0B660050332A /* Calculator-C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Calculator-C"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22009AC91D0F0B660050332A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		22009AD01D0F0FD80050332A /* Config.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Config.c; sourceTree = "<group>"; };
+		22009AD11D0F0FD80050332A /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		22872DC51D0F14A600A29B8F /* Logic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Logic.c; sourceTree = "<group>"; };
+		22872DC61D0F14A600A29B8F /* Logic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logic.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,29 @@
 		22009AC81D0F0B660050332A /* Calculator-C */ = {
 			isa = PBXGroup;
 			children = (
+				22872DC41D0F148700A29B8F /* Logic */,
+				22009AD31D0F0FE20050332A /* Config */,
 				22009AC91D0F0B660050332A /* main.c */,
 			);
 			path = "Calculator-C";
+			sourceTree = "<group>";
+		};
+		22009AD31D0F0FE20050332A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				22009AD11D0F0FD80050332A /* Config.h */,
+				22009AD01D0F0FD80050332A /* Config.c */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		22872DC41D0F148700A29B8F /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				22872DC61D0F14A600A29B8F /* Logic.h */,
+				22872DC51D0F14A600A29B8F /* Logic.c */,
+			);
+			name = Logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22872DC71D0F14A600A29B8F /* Logic.c in Sources */,
 				22009ACA1D0F0B660050332A /* main.c in Sources */,
+				22009AD21D0F0FD80050332A /* Config.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +267,7 @@
 				22009ACF1D0F0B660050332A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
