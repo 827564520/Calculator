@@ -19,15 +19,16 @@ typedef struct
 {
     long length;        //字符串长度
     StringList string;  //字符串指针
-}String;
+}__String;
 
+typedef __String *String;
 
 /**
  *  创建字符串结构
  *
  *  @return 返回字符串结构
  */
-String *createString();
+String createString();
 
 /**
  *  创建字符串结构体
@@ -37,14 +38,14 @@ String *createString();
  *
  *  @return 返回字符串结构
  */
-String *initString(char *_string, String *string);
+String initString(char *_string, String string);
 
 /**
  *  删除字符串结构
  *
  *  @param string 被删除的字符串结构
  */
-void removeString(String *string);
+void removeString(String string);
 
 /**
  *  字符串结构拷贝
@@ -54,14 +55,14 @@ void removeString(String *string);
  *
  *  @return 返回新的字符串
  */
-String *stringCopy(String *descStr, const String *srcStr);
+String stringCopy(String descStr, const String srcStr);
 
 /**
  *  输出字符串
  *
  *  @param string 传入字符串结构
  */
-void printString(String *string);
+void printString(String string);
 
 
 #endif /* String_h */

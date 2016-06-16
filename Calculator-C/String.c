@@ -11,9 +11,9 @@
 
 
 
-String *createString()
+String createString()
 {
-    String *string = (String *)malloc(sizeof(String));
+    String string = (String)malloc(sizeof(String));
     if (!string)
     {
         return NULL;
@@ -23,7 +23,7 @@ String *createString()
 }
 
 
-String *initString(char *_string, String *string)
+String initString(char *_string, String string)
 {
     StringList str_list = stringList(_string);
     
@@ -33,7 +33,7 @@ String *initString(char *_string, String *string)
     return string;
 }
 
-void removeString(String *string)
+void removeString(String string)
 {
     removeStringList(string->string);
     string->length = 0;
@@ -41,13 +41,12 @@ void removeString(String *string)
     string = NULL;
 }
 
-
-String *stringCopy(String *descStr, const String *srcStr)
+String stringCopy(String descStr, const String srcStr)
 {
     return NULL;
 }
 
-void printString(String *string)
+void printString(String string)
 {
     showStringList(string->string);
 }

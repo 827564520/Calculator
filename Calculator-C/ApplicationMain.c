@@ -12,7 +12,7 @@
 int ApplicationMain(int argc, const char **argv)
 {
     //创建字符串
-    String *string = createString();
+    String string = createString();
     //初始化字符串
     string = initString("My name is Lili.", string);
     //求长度
