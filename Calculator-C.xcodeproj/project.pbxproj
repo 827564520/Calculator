@@ -10,6 +10,7 @@
 		22009ACA1D0F0B660050332A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 22009AC91D0F0B660050332A /* main.c */; };
 		22009AD21D0F0FD80050332A /* Config.c in Sources */ = {isa = PBXBuildFile; fileRef = 22009AD01D0F0FD80050332A /* Config.c */; };
 		22872DC71D0F14A600A29B8F /* Logic.c in Sources */ = {isa = PBXBuildFile; fileRef = 22872DC51D0F14A600A29B8F /* Logic.c */; };
+		22E5DAE71D12DB8C005720FA /* ApplicationMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 22E5DAE51D12DB8C005720FA /* ApplicationMain.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		22009AD11D0F0FD80050332A /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		22872DC51D0F14A600A29B8F /* Logic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Logic.c; sourceTree = "<group>"; };
 		22872DC61D0F14A600A29B8F /* Logic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logic.h; sourceTree = "<group>"; };
+		22E5DAE51D12DB8C005720FA /* ApplicationMain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ApplicationMain.c; sourceTree = "<group>"; };
+		22E5DAE61D12DB8C005720FA /* ApplicationMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationMain.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				22872DC41D0F148700A29B8F /* Logic */,
 				22009AD31D0F0FE20050332A /* Config */,
 				22009AC91D0F0B660050332A /* main.c */,
+				22E5DAE61D12DB8C005720FA /* ApplicationMain.h */,
+				22E5DAE51D12DB8C005720FA /* ApplicationMain.c */,
 			);
 			path = "Calculator-C";
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				22872DC71D0F14A600A29B8F /* Logic.c in Sources */,
 				22009ACA1D0F0B660050332A /* main.c in Sources */,
 				22009AD21D0F0FD80050332A /* Config.c in Sources */,
+				22E5DAE71D12DB8C005720FA /* ApplicationMain.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
