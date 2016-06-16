@@ -11,6 +11,10 @@
 
 #include <stdio.h>
 
+#define PRINT_LOG   (0) //打印日志
+#define Log(msg)\
+if (PRINT_LOG) printf("Log:%s\n",msg);
+
 
 #endif /* Config_h */
 
