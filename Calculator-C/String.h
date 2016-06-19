@@ -45,7 +45,7 @@ String initString(char *_string, String string);
  *
  *  @param string 被删除的字符串结构
  */
-void removeString(String string);
+void releaseString(String string);
 
 /**
  *  字符串结构拷贝

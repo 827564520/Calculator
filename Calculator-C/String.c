@@ -33,7 +33,7 @@ String initString(char *_string, String string)
     return string;
 }
 
-void removeString(String string)
+void releaseString(String string)
 {
     removeStringList(string->string);
     string->length = 0;
